@@ -15,3 +15,7 @@ enable = [
 [tool.isort]
 profile = "black"
 known_first_party = ["imjoseangel"] # see package configuration below
+
+[tool.pyright]
+reportMissingTypeArgument = true # Report generic classes used without type arguments
+strictListInference = true       # Use union types when inferring types of lists elements, instead of Any
