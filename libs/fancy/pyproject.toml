@@ -1,0 +1,17 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "imjoseangel-fancy"
+version = "0.0.1"
+description = "Imjoseangel's fancy library"
+authors = ["Tweag <hello@tweag.io>"]
+packages = [{ include = "imjoseangel" }]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+numpy = "^1.2.3"
+imjoseangel-base = "*"
+
+# tooling configuration, omitted (same as top-level pyproject.toml)
